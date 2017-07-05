@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"gitlab.com/sigma7/goken"
+	"gitlab.com/hartsfield/goken"
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/gmail/v1"

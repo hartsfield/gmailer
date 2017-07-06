@@ -1,4 +1,4 @@
-// Package gmailer is a go library used for senfing emails using the gmail API.
+// Package gmailer is a go library used for sending emails using the gmail API.
 
 // Copyright (c) 2017 J. Hartsfield
 

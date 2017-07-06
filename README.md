@@ -1,3 +1,3 @@
 #GMAILER
 
-A library for sending gmails
+A library for sending gmails...

@@ -18,3 +18,22 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 package gmailer
+
+import (
+	"testing"
+
+	"gitlab.com/hartsfield/gmailer"
+)
+
+func TestMail(t *testing.T) {
+
+	msg := &gmailer.Message{
+		Recipient: "anonymous15415@gmail.com",
+		Subject:   "test email",
+		Body:      "Test",
+	}
+	msg.Send(onSuccess)
+}
+func onSuccess() {
+	println("Success")
+}

@@ -54,7 +54,7 @@ func (m *Message) Send(cb func()) {
 
 	message.Raw = base64.URLEncoding.EncodeToString(messageStr)
 
-	_, err := srv.Users.Messages.Send("me", &message).Do()
+	_, err := srv.Users.Messages.Send(m.Recipient, &message).Do()
 	if err != nil {
 		log.Printf("Error: %v", err)
 	} else {

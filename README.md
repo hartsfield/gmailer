@@ -6,22 +6,22 @@ alerts when things happen that I need to know about. Simply form a
 
 Example:
 
-        package main
+    package main
 
-        import (
-                "fmt"
-                "github.com/hartsfield/gmailer"
-        )
+    import (
+            "fmt"
+            "github.com/hartsfield/gmailer"
+    )
 
-        func main() {
-                msg := gmailer.Message{
-                        Recipient: "YOUR___GMAIL___HERE@gmail.com",
-                        Subject:   "ALERT! Server has exceeded the maximum number of open file descriptors",
-                        Body:      "...",
-                }
-                msg.Send(onMessageSent)
-        }
+    func main() {
+            msg := gmailer.Message{
+                    Recipient: "YOUR___GMAIL___HERE@gmail.com",
+                    Subject:   "ALERT! Server has exceeded the maximum number of open file descriptors",
+                    Body:      "...",
+            }
+            msg.Send(onMessageSent)
+    }
 
-        func onMessageSent() {
-                fmt.Println("Message sent successfully")
-        }
+    func onMessageSent() {
+            fmt.Println("Message sent successfully")
+    }

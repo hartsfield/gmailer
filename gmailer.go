@@ -25,7 +25,7 @@ import (
 	"encoding/base64"
 	"log"
 
-	"gitlab.com/hartsfield/gmailAPI"
+	"github.com/hartsfield/gmailAPI"
 	"golang.org/x/net/context"
 	"google.golang.org/api/gmail/v1"
 )

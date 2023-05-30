@@ -22,7 +22,7 @@ package gmailer
 import (
 	"testing"
 
-	"gitlab.com/hartsfield/gmailer"
+	"github.com/hartsfield/gmailer"
 )
 
 func TestMail(t *testing.T) {
